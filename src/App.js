@@ -40,7 +40,7 @@ function App() {
 
   const location = useLocation();
   const matchVerify = useMatch('/verify/:email')
-  const hideNavbarAndSidenav = ['/login', '/register', '/verify', 'NotFound'].includes(location.pathname) || matchVerify;
+  const hideNavbarAndSidenav = ['/login', '/register', '/verify', '/NotFound'].includes(location.pathname) || matchVerify;
   return (
 
     <div className="App">
