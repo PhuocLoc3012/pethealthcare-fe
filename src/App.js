@@ -78,13 +78,14 @@ function App() {
                 </AuthProvider>
               } />
               <Route path="/viewPet/:petId" element={
-                <ConditionalViewPet>
-                  <AuthProvider>
+                <AuthProvider>
+                  <ConditionalViewPet>
                     <Permission roleId={['1', '2', '3']} redirect={true}>
                       <ViewPet />
                     </Permission>
-                  </AuthProvider>
-                </ConditionalViewPet>
+                  </ConditionalViewPet>
+
+                </AuthProvider>
               } />
               <Route path="/listPets" element={
                 <AuthProvider>
@@ -245,7 +246,7 @@ function App() {
 
 
               } />
-               <Route path="/NotFound" element={<NotFound />} />
+              <Route path="/NotFound" element={<NotFound />} />
             </Routes >
 
 
