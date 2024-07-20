@@ -196,7 +196,7 @@ export default function ViewPet() {
         try {
             setCompletedBooking({ ...completedBooking, status: "DONE" })
             // console.log(medicalRecordRequest)
-            if (medicalRecord?.diagnosis || medicalRecord?.treatment) {
+            if (medicalRecord?.diagnosis && medicalRecord?.treatment) {
                 // console.log(medicalRecordRequest)
                 // console.log(petId)
                 const response = await axios.post(`${URL}/medicalRecord/add/${petId}`, medicalRecordRequest, { withCredentials: true });
