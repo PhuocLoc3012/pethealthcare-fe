@@ -33,7 +33,7 @@ function Radio(props) {
     )
   }
   
-
+//định nghĩa kiểu dữ liệu cho prop
   Radio.propTypes = {
     bg: PropTypes.string,
     color: PropTypes.string,
@@ -45,7 +45,7 @@ function Radio(props) {
 function RadioCard(props) {
     const { getRootProps, getRadioProps } = useRadioGroup({
         name: 'framework',
-        defaultValue: 'react',
+        defaultValue: 'react', 
         onChange: props.onChange,
         value: props.value
     })
