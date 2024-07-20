@@ -81,7 +81,7 @@ export default function CreatePet() {
       }
     } catch (e) {
       // console.log(e)
-      navigate('/404page')
+      navigate('/NotFound')
     }
   }
 

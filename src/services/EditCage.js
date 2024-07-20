@@ -26,7 +26,7 @@ export default function EditCage() {
                 }
             } catch (e) {
                 toast.error("Error loading cage data");
-                navigate('/404page')
+                navigate('/NotFound')
             }
         }
         loadCage()
@@ -83,7 +83,7 @@ export default function EditCage() {
             }
         } catch (e) {
             // console.log(e)
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 

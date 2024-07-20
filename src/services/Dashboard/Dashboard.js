@@ -24,7 +24,7 @@ export default function Dashboard() {
   let navigate = useNavigate();
   const roleId = localStorage.getItem('roleId');
   if (roleId !== '4') {
-    navigate('/404page');
+    navigate('/NotFound');
   }
   const formatDate = (date) => {
     return new Date(date).toLocaleDateString('en-CA')

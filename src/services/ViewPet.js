@@ -71,7 +71,7 @@ export default function ViewPet() {
             toast.error(e.message)
             // console.error(e); // This helps to debug in case of an unexpected error
             setTimeout(() => {
-                navigate('/404page')
+                navigate('/NotFound')
             }, 2000);
         }
     }
@@ -90,7 +90,7 @@ export default function ViewPet() {
         } catch (e) {
             toast.error(e.message)
             setTimeout(() => {
-                navigate('/404page')
+                navigate('/NotFound')
             }, 2000);
         }
     }
@@ -226,7 +226,7 @@ export default function ViewPet() {
 
         } catch (error) {
             // console.log(error.message);
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 
@@ -256,7 +256,7 @@ export default function ViewPet() {
             }
         }
         catch (e) {
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 

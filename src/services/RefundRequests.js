@@ -38,7 +38,7 @@ export default function RefundRequests() {
                     toast.warning(response.data.message)
                 }
             } catch (e) {
-                navigate('/404page')
+                navigate('/NotFound')
             }
         }
         fetchBookingsNeedRefund(currentPage, "Request Refund")
@@ -68,7 +68,7 @@ export default function RefundRequests() {
                 toast.warning('Refused refund failed')
             }
         } catch (e) {
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 

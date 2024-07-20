@@ -265,7 +265,7 @@ const ConditionalViewPet = () => {
 
   // Nếu roleId = 3 mà không có state từ navigate thì chuyển hướng đến /page404
   if (roleId === '3' && !location.state?.fromButton) {
-    return <Navigate to="/page404" />;
+    return <Navigate to="/NotFound" />;
   }
 
   return <ViewPet />;

@@ -18,7 +18,7 @@ export const Permission = ({ roleId, children, redirect }) => {
                     setRole(user.data.roleId)
                 } else {
                     if (redirect) {
-                        navigate('/not-found')
+                        navigate('/NotFound')
                     }
                 }
             }

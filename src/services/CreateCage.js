@@ -47,7 +47,7 @@ export default function CreateCage() {
                 toast.warning(respone.data.message)
             }
         } catch (e) {
-            navigate('/404page')
+            navigate('/NotFound')
         }
 
     }
@@ -62,7 +62,7 @@ export default function CreateCage() {
             }
         } catch (e) {
             // console.log(e)
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 

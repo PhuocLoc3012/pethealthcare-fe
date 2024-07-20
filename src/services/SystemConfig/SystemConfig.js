@@ -45,7 +45,7 @@ export default function SystemConfig() {
             }
         } catch (e) {
             // console.log(e)
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 
@@ -61,7 +61,7 @@ export default function SystemConfig() {
                     toast.warning(response.data.message)
                 }
             } catch (e) {
-                navigate('/404page')
+                navigate('/NotFound')
             }
         }
         fetchConfigurationsByKey(selectedKey, currentPage)
@@ -80,7 +80,7 @@ export default function SystemConfig() {
             }
         } catch (e) {
             // console.log(e)
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 
@@ -95,7 +95,7 @@ export default function SystemConfig() {
             }
         } catch (e) {
             // console.log(e)
-            navigate('/404page')
+            navigate('/NotFound')
         }
     }
 

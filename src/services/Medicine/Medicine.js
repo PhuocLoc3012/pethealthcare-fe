@@ -35,7 +35,7 @@ export default function Medicine() {
     }
     const roleId = localStorage.getItem('roleId')
     if (roleId !== '2') {
-      navigate('/404page')
+      navigate('/NotFound')
     }
     fetchMedicineUnit()
   }, [])
@@ -49,7 +49,7 @@ export default function Medicine() {
         setMedicineUnits(respone.data.configurations)
       }
     } catch (e) {
-      navigate('404page')
+      navigate('NotFound')
     }
   }
 

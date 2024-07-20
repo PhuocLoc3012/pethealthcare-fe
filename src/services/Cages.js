@@ -72,7 +72,7 @@ const Cages = () => {
       }
     } catch (e) {
       // console.log(e)
-      navigate('/404page')
+      navigate('/NotFound')
     }
   }
   useEffect(() => {
@@ -126,7 +126,7 @@ const Cages = () => {
         toast.warning(respone.data.message)
       }
     } catch (e) {
-      navigate('/404page')
+      navigate('/NotFound')
     }
   }
 

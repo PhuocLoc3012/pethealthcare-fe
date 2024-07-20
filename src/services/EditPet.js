@@ -24,7 +24,7 @@ export default function EditPet() {
     }
     const roleId = localStorage.getItem('roleId');
     if (roleId === 3 || roleId === 4) {
-      navigate('/404page');
+      navigate('/NotFound');
     }
   }, []);
 
@@ -133,7 +133,7 @@ export default function EditPet() {
       }
     } catch (e) {
       // console.log(e)
-      navigate('/404page')
+      navigate('/NotFound')
     }
   }
 
